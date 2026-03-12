@@ -1,0 +1,31 @@
+{
+  "name": "Hansa-MD_Next (4.5.0)",
+  "description": "Hansa-MD_Next is a Powerful Whatsapp bot 👨‍💻❤️",
+  "logo": "https://i.ibb.co/YnKwtFV/50d27b64cf679379.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "multi device", "Hansa-md"],
+  "success_url": "/",
+
+  "env": {
+    "BOT_NUMBER": {
+      "description": "Put the number here.",
+      "required": true
+    },  
+
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": false
+    },  
+
+    "DATABASE": {
+      "description": "put any one database URL — Github token, MongoDB, MySQL, or PostgreSQL.",
+      "required": true
+    }   
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"  
+}
